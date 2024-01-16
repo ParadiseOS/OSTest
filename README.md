@@ -26,3 +26,9 @@ qemu-system-i386 -kernel build-bin/myos.bin
 cp build-bin/myos.bin osdir/boot
 grub-mkrescue -o myos.iso osdir
 ```
+
+*Running from an ISO*
+
+``` sh
+qemu-system-i386 -cdrom myos.iso
+```
